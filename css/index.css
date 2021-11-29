@@ -1,0 +1,28 @@
+* {
+  box-sizing: border-box;
+  margin: 0%;
+  padding: 0;
+  @font-face font-family: bahnschrift;
+  src: url(/font/BAHNSCHRIFT.ttf);
+}
+.container-1 {
+  background-color: #cad3f3;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+p {
+  font-family: bahnschrift;
+  font-size: 50px;
+}
+
+.cosmology-img {
+  max-width: 70%;
+  border-radius: 5px;
+}
+.info {
+  text-align: center;
+  background-color: #cad3f3;
+  font-size: 20px;
+}
