@@ -4,6 +4,8 @@
   padding: 0;
   @font-face font-family: bahnschrift;
   src: url(/font/BAHNSCHRIFT.ttf);
+  @font-face font-family: tahoma;
+  src: url(/font/tahoma.ttf);
 }
 .container-1 {
   background-color: #cad3f3;
@@ -11,18 +13,26 @@
   display: flex;
   justify-content: center;
   padding: 20px;
+  gap: 20px;
 }
 p {
   font-family: bahnschrift;
   font-size: 50px;
 }
 
-.cosmology-img {
-  max-width: 70%;
-  border-radius: 5px;
+.img {
+  max-width: 100%;
 }
 .info {
   text-align: center;
   background-color: #cad3f3;
   font-size: 20px;
+  padding: 30px 100px;
+  font-family: "tahoma";
+}
+.img_higher {
+  margin-top: 40px;
+}
+.big_text {
+  margin-bottom: 20px;
 }
