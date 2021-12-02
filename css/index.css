@@ -15,7 +15,7 @@
   padding: 20px 70px;
   gap: 50px;
 }
-p {
+.big_text {
   font-family: bahnschrift;
   font-size: 50px;
 }
@@ -36,6 +36,13 @@ p {
 }
 .big_text {
   margin-bottom: 20px;
+}
+.button {
+  background-color: rgba(23, 40, 50, 0.85);
+  font-size: 60px;
+  position: absolute;
+  margin-top: 25vh;
+  padding: 10px 100px;
 }
 
 /* container-2 */
