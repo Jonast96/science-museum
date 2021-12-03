@@ -39,10 +39,15 @@
 }
 .button {
   background-color: rgba(23, 40, 50, 0.85);
-  font-size: 60px;
+  font-size: 29px;
   position: absolute;
-  margin-top: 25vh;
-  padding: 10px 100px;
+  padding: 10px 53px;
+  bottom: 65px;
+  left: 0px;
+  width: 100%;
+}
+.home-explore {
+  position: relative;
 }
 
 /* container-2 */
@@ -60,4 +65,30 @@ h3 {
 }
 .container-2 p {
   background-color: #172832;
+}
+
+@media only screen and (max-width: 1160px) {
+  h2 {
+    font-size: 70px;
+  }
+  .navbar {
+    margin: 0px auto 0px auto;
+  }
+  a {
+    font-size: 25px;
+  }
+  .big_text {
+    font-size: 30px;
+  }
+
+  .button {
+    font-size: 20px;
+  }
+  .info {
+    padding: 20px 100px;
+    font-size: 17px;
+  }
+  nav {
+    flex-direction: column;
+  }
 }
