@@ -1,7 +1,3 @@
-@font-face font-family: bahnschrift;
-src: url(/font/BAHNSCHRIFT.ttf);
-@font-face font-family: tahoma;
-src: url(/font/tahoma.ttf);
 * {
   box-sizing: border-box;
   margin: 0%;
