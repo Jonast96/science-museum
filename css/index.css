@@ -3,7 +3,9 @@
   margin: 0%;
   padding: 0;
 }
-
+.hamburger-menu {
+  display: none;
+}
 .container-1 {
   background-color: #cad3f3;
   text-align: center;
@@ -15,11 +17,15 @@
 .big_text {
   font-family: bahnschrift;
   font-size: 50px;
+  margin-bottom: 20px;
 }
 
 .img {
   width: 100%;
   border-radius: 10px;
+}
+.img_higher {
+  margin-top: 30px;
 }
 .info {
   text-align: center;
@@ -28,12 +34,7 @@
   padding: 20px 200px;
   font-family: "tahoma";
 }
-.img_higher {
-  margin-top: 30px;
-}
-.big_text {
-  margin-bottom: 20px;
-}
+
 .button {
   background-color: rgba(23, 40, 50, 0.85);
   font-size: 29px;
@@ -101,6 +102,36 @@ h3 {
   padding: 20px 50px 0px 50px;
   font-family: "tahoma";
 }
+/* container-3 */
+h4 {
+  font-family: bahnschrift;
+  background-color: #223743;
+  text-align: center;
+  font-size: 60px;
+  color: #f0f1f1;
+}
+.container-3 {
+  background-color: #223743;
+  display: flex;
+}
+.container-3_info {
+  text-align: left;
+  font-size: 20px;
+  padding: 20px 50px 0px 50px;
+  font-family: "tahoma";
+  color: black;
+}
+.container-3_content {
+  background-color: #f0f1f1;
+  margin: 30px 30px;
+  border-radius: 20px;
+  padding-bottom: 40px;
+}
+.container-3_big-text {
+  font-family: bahnschrift;
+  font-size: 50px;
+  text-align: center;
+}
 
 @media only screen and (max-width: 1160px) {
   h2 {
@@ -125,5 +156,44 @@ h3 {
   }
   nav {
     flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 540px) /*Hamburger*/ {
+  nav ul li {
+    display: none;
+  }
+  .hamburger-menu {
+    display: block;
+  }
+  .hamburger-menu:checked ~ nav ul li {
+    display: block;
+  }
+  h2 {
+    display: none;
+  }
+  h1 {
+    font-size: 25px;
+  }
+
+  .header {
+    height: 20vh;
+  }
+  .container-1 {
+    display: block;
+    padding: 10px 40px;
+  }
+  .info {
+    padding: 20px 50px;
+    font-size: 19px;
+  }
+  .big_text {
+    margin-bottom: 5px;
+  }
+  .img_higher {
+    margin-top: 0px;
+  }
+  .img {
+    max-width: 100%;
   }
 }
