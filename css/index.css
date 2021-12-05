@@ -15,7 +15,7 @@
   gap: 50px;
 }
 .big_text {
-  font-family: bahnschrift;
+  font-family: bahnschrift, sans-serif;
   font-size: 50px;
   margin-bottom: 20px;
 }
@@ -32,10 +32,10 @@
   background-color: #cad3f3;
   font-size: 25px;
   padding: 20px 200px;
-  font-family: "tahoma";
+  font-family: Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.button {
+.container-1_button {
   background-color: rgba(23, 40, 50, 0.85);
   font-size: 29px;
   position: absolute;
@@ -44,7 +44,8 @@
   left: 0px;
   width: 100%;
 }
-.button:hover {
+.container-1_button:hover,
+.container-3_button:hover {
   -webkit-box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000,
     5px 5px 23px 18px rgba(0, 0, 0, 0.59);
   box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000,
@@ -58,7 +59,7 @@
 h3 {
   color: #fcca46;
   font-size: 70px;
-  font-family: bahnschrift;
+  font-family: bahnschrift, sans-serif;
   background-color: #172832;
   text-align: center;
   padding-bottom: 10px;
@@ -76,14 +77,18 @@ h3 {
 .container-2 {
   background-color: #172832;
   padding: 0px 70px;
+  padding-bottom: 20px;
 }
 .container-2_content {
   background-color: rgba(218, 218, 218, 16%);
   margin-bottom: 20px;
   border-radius: 10px;
 }
+.container-2_content_no-margin {
+  margin-bottom: 0px;
+}
 .container-2_big-text {
-  font-family: bahnschrift;
+  font-family: bahnschrift, sans-serif;
   font-size: 25px;
   text-decoration: underline;
   text-align: center;
@@ -104,14 +109,12 @@ h3 {
 }
 /* container-3 */
 h4 {
-  font-family: bahnschrift;
-  background-color: #223743;
+  font-family: bahnschrift, sans-serif;
   text-align: center;
   font-size: 60px;
   color: #f0f1f1;
 }
-.container-3 {
-  background-color: #223743;
+.container-3_section {
   display: flex;
 }
 .container-3_info {
@@ -128,9 +131,18 @@ h4 {
   padding-bottom: 40px;
 }
 .container-3_big-text {
-  font-family: bahnschrift;
+  font-family: bahnschrift, sans-serif;
   font-size: 50px;
   text-align: center;
+}
+.container-3 {
+  background-color: #223743;
+  text-align: center;
+  padding-bottom: 40px;
+}
+.container-3_button {
+  padding: 10px 30px;
+  font-size: 40px;
 }
 
 @media only screen and (max-width: 1160px) {
@@ -150,12 +162,18 @@ h4 {
   .button {
     font-size: 20px;
   }
+  .container-3_button {
+    font-size: 40px;
+  }
   .info {
     padding: 20px 100px;
     font-size: 17px;
   }
   nav {
     flex-direction: column;
+  }
+  .container-3_section {
+    display: block;
   }
 }
 
@@ -195,5 +213,12 @@ h4 {
   }
   .img {
     max-width: 100%;
+  }
+  .footer {
+    display: block;
+    margin: 0px 0px;
+  }
+  .footer_content {
+    margin: 10px 0px;
   }
 }
