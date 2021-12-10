@@ -1,5 +1,5 @@
 .header {
-  height: 15vh;
+  height: 22vh;
 }
 .explore_grid {
   background-color: #172832;
@@ -7,10 +7,16 @@
   gap: 5rem;
   grid-template-columns: repeat(6, 1fr);
   text-align: center;
+  padding: 50px 100px 50px 100px;
+}
+.explore_content {
+  background-color: #1c2f3a;
+  border-radius: 20px;
 }
 .grid-span-6 {
   grid-column: span 6;
 }
+
 .grid-span-3 {
   grid-column: span 3;
 }
@@ -21,13 +27,13 @@ p {
   color: #f0f1f1;
 }
 .span-6_img {
-  max-width: 50vw;
+  max-width: 45vw;
 }
 .span-3_img {
-  max-width: 40vw;
+  max-width: 35vw;
 }
 .span-2_img {
-  max-width: 25vw;
+  max-width: 20vw;
 }
 main img {
   border-radius: 20px;
@@ -42,7 +48,7 @@ main img {
   font-size: 1vw;
 }
 .span-3_text {
-  font-size: 1.3vw;
+  font-size: 1.2vw;
 }
 .span-6_text {
   font-size: 1.5vw;
@@ -53,11 +59,20 @@ main img {
 .grid-span-2_margin-top {
   margin-top: 50px;
 }
-
+.span-1_4 {
+  grid-column: 1/4;
+}
+.span-4_7 {
+  grid-column: 4/7;
+}
 @media only screen and (max-width: 1200px) {
   .explore_grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
+    padding: 20px;
+  }
+  .explore_text {
+    font-size: 2vw;
   }
   .grid-span-6 {
     grid-column: span 1;
@@ -80,13 +95,11 @@ main img {
   .span-2_img {
     max-width: 40vw;
   }
-  .span-2_text {
-    font-size: 1.5vw;
+
+  .margin-left {
+    margin-left: 0px;
   }
-  .span-3_text {
-    font-size: 1.5vw;
-  }
-  .span-6_text {
-    font-size: 1.5vw;
+  .margin-right {
+    margin-right: 0px;
   }
 }
