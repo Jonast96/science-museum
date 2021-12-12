@@ -79,6 +79,18 @@ main img {
 .grid-span-2_margin-top {
   margin-top: 50px;
 }
+.explore_content_flex {
+  background-color: #1c2f3a;
+  padding: 70px 40px 40px 40px;
+  border-radius: 20px;
+  margin-top: 30px;
+}
+.cosmology-flex {
+  position: absolute;
+  left: 50%;
+  top: 30%;
+  transform: translate(-50%, -50%);
+}
 
 @media only screen and (max-width: 1200px) {
   .explore_grid {

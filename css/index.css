@@ -96,7 +96,7 @@ h3 {
 }
 
 .container-2_info {
-  font-size: 1.5vw;
+  font-size: 1.2vw;
   padding: 20px 50px 0px 50px;
   font-family: "tahoma";
   max-width: 1600px;
@@ -139,6 +139,9 @@ h4 {
   padding: 10px 30px;
   font-size: 40px;
 }
+label, input {
+  display: none;
+}
 
 @media only screen and (max-width: 1200px) {
   h2, h3, h4 {
@@ -169,26 +172,70 @@ h4 {
 }
 
 @media only screen and (max-width: 795px) {
-  .hamburger-menu:checked ~ nav ul li {
+  nav {
+    display: none;
+  }
+  nav {
+    background: none;
+
+  }
+  .header {
+    height: 50vh;
+  }
+  nav ul li {
+    display: block;
+    text-align: center;
+    padding: 15px;
+  }
+  
+  h1 { margin: 0px;
+  }
+  #hamburger-menu:checked ~ nav  {
     display: block;
   }
+  #hamburger-menu {
+    display: none;
+  }
+  label, input {
+    display: block;
+    color: white;
+  }
+
+
+  
   h2 {
     display: none;
   }
   h1 {
-    font-size: 25px;
+    font-size: 6vw;
   }
-
-  .header {
-    height: 20vh;
+  h4 {
+    padding-top: 10px;
   }
+  
   .container-1 {
     display: block;
     padding: 10px 40px;
   }
   .info {
     padding: 20px 50px;
-    font-size: 19px;
+    font-size: 4.5vw;
+  }
+  .container-2_info {
+    font-size: 4.5vw;
+  }
+  .container-2 {
+    padding-bottom: 20px;
+  }
+  .container-2_big-text {
+    font-size: 5vw;
+  }
+  .container-3_info {
+    font-size: 4.5vw;
+  }
+  .container-3_big-text {
+    font-size: 7vw;
+    padding-top: 10px;
   }
   .big_text {
     margin-bottom: 5px;
