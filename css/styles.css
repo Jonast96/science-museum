@@ -3,12 +3,6 @@
   margin: 0%;
   padding: 0;
 }
-h1,
-a {
-  color: #f0f1f1;
-  font-size: 30px;
-  font-family: bahnschrift;
-}
 .footer {
   display: flex;
   justify-content: space-evenly;

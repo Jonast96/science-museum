@@ -1,6 +1,10 @@
 .hamburger-menu {
   display: none;
 }
+.desktop-displaynone {
+  margin: 0px;
+  display: none;
+}
 .container-1 {
   background-color: #cad3f3;
   text-align: center;
@@ -139,12 +143,17 @@ h4 {
   padding: 10px 30px;
   font-size: 40px;
 }
-label, input {
+label,
+input {
   display: none;
+}
+.fas {
+  padding: 10px 0px 20px 40px;
 }
 
 @media only screen and (max-width: 1200px) {
-  h2, h3, h4 {
+  h3,
+  h4 {
     font-size: 7vw;
   }
 
@@ -157,7 +166,7 @@ label, input {
 
   .container-2 {
     text-align: center;
-    padding: 0px 20px
+    padding: 0px 20px;
   }
   .container-2_img {
     margin-left: 0px;
@@ -169,40 +178,52 @@ label, input {
   }
   .container-2_big-text {
     font-size: 3vw;
+  }
 }
-
 @media only screen and (max-width: 795px) {
-  nav {
+  nav,
+  .mobile-displaynone {
     display: none;
+  }
+  .desktop-displaynone {
+    display: block;
   }
   nav {
     background: none;
-
   }
   .header {
-    height: 50vh;
+    height: auto;
   }
+
   nav ul li {
     display: block;
     text-align: center;
-    padding: 15px;
+    padding: 10px;
+    margin: 10px 220px 0px;
+    background-color: #172832;
+    text-decoration: none;
+    border-radius: 40px;
   }
-  
-  h1 { margin: 0px;
+  a {
+    color: #fcca46;
+    text-decoration: none;
   }
-  #hamburger-menu:checked ~ nav  {
+
+  h1 {
+    margin: 0px;
+  }
+  #hamburger-menu:checked ~ nav {
     display: block;
   }
   #hamburger-menu {
     display: none;
   }
-  label, input {
+  label,
+  input {
     display: block;
     color: white;
   }
 
-
-  
   h2 {
     display: none;
   }
@@ -212,7 +233,7 @@ label, input {
   h4 {
     padding-top: 10px;
   }
-  
+
   .container-1 {
     display: block;
     padding: 10px 40px;
@@ -246,14 +267,7 @@ label, input {
   .img {
     max-width: 100%;
   }
-  .footer {
-    display: block;
-    margin: 0px 0px;
-  }
-  .footer_content {
-    padding: 10px 20px;
-  }
-  .cookies {
-    padding: 0px 100px;
+  .info {
+    flex: 1;
   }
 }
