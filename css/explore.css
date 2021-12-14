@@ -1,6 +1,13 @@
 .header {
   height: 22vh;
 }
+.hamburger-menu {
+  display: none;
+}
+.desktop-displaynone {
+  margin: 0px;
+  display: none;
+}
 .display-none {
   display: none;
 }
@@ -91,7 +98,13 @@ main img {
   top: 30%;
   transform: translate(-50%, -50%);
 }
-
+label,
+input {
+  display: none;
+}
+.fas {
+  padding: 10px 0px 20px 40px;
+}
 @media only screen and (max-width: 1200px) {
   .explore_grid {
     grid-template-columns: repeat(2, 1fr);
@@ -142,5 +155,55 @@ main img {
   .large_text {
     font-size: 10vw;
     margin-bottom: 5px;
+  }
+  nav,
+  .mobile-displaynone {
+    display: none;
+  }
+  .desktop-displaynone {
+    display: block;
+  }
+  nav {
+    background: none;
+  }
+  .header {
+    height: auto;
+  }
+
+  nav ul li {
+    display: block;
+    text-align: center;
+    padding: 10px;
+    margin: 10px 100px 0px;
+    background-color: #172832;
+    text-decoration: none;
+    border-radius: 40px;
+  }
+  a {
+    color: #fcca46;
+    text-decoration: none;
+  }
+
+  h1 {
+    margin: 0px;
+  }
+  #hamburger-menu:checked ~ nav {
+    display: block;
+  }
+  #hamburger-menu {
+    display: none;
+  }
+  label,
+  input {
+    display: block;
+    color: white;
+  }
+  h1 {
+    background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0) 5%,
+      rgba(0, 0, 0, 0.26094187675070024) 15%,
+      rgba(0, 0, 0, 0.6923144257703081) 78%
+    );
   }
 }
