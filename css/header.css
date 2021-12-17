@@ -29,27 +29,16 @@ nav ul li {
 
 a {
   color: #f0f1f1;
-  font-size: 25px;
+  font-size: 1.5em;
   font-family: bahnschrift;
 }
-h1 {
-  font-size: 2.5vw;
+.logo {
+  font-size: 2.2em;
   margin-top: 20px;
   margin-left: 20px;
   text-align: center;
   color: #f0f1f1;
   font-family: bahnschrift;
-}
-h2 {
-  color: #fcca46;
-  text-align: center;
-  font-family: bahnschrift;
-  font-size: 80px;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  margin-bottom: 40px;
 }
 
 .button {
@@ -68,37 +57,59 @@ h2 {
   font-family: Tahoma, Geneva, Verdana, sans-serif;
 }
 .footer_small-text {
-  font-size: 1vw;
+  font-size: 0.5em;
 }
 .footer_large-text {
-  font-size: 1.2vw;
+  font-size: 0.8em;
 }
 
 .copyright {
-  font-size: 1.5vw;
+  font-size: 1em;
 }
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1040px) {
   .navbar {
     margin: 0px auto 0px auto;
   }
-  a {
-    font-size: 25px;
-  }
-  .big_text {
-    font-size: 30px;
-  }
-
-  .button {
-    font-size: 20px;
-  }
-  .container-3_button {
-    font-size: 40px;
-  }
-
   nav {
     flex-direction: column;
   }
-  h1 {
-    font-size: 30px;
+}
+
+@media only screen and (max-width: 700px) {
+  nav {
+    background: none;
+  }
+  .header {
+    height: auto;
+  }
+
+  nav ul li {
+    display: block;
+    text-align: center;
+    padding: 10px;
+    margin: 10px 100px 0px;
+    background-color: #172832;
+    text-decoration: none;
+    border-radius: 40px;
+  }
+  a {
+    color: #fcca46;
+    text-decoration: none;
+  }
+
+  #hamburger-menu:checked ~ nav {
+    display: block;
+  }
+  #hamburger-menu {
+    display: none;
+  }
+
+  .logo {
+    background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0) 5%,
+      rgba(0, 0, 0, 0.26094187675070024) 15%,
+      rgba(0, 0, 0, 0.6923144257703081) 78%
+    );
   }
 }

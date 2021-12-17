@@ -137,7 +137,7 @@ li {
     display: block;
     color: white;
   }
-  h1 {
+  .logo {
     background: linear-gradient(
       0deg,
       rgba(0, 0, 0, 0) 5%,

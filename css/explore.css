@@ -161,47 +161,16 @@ input {
   .desktop-displaynone {
     display: block;
   }
-  nav {
-    background: none;
-  }
-  .header {
-    height: auto;
-  }
 
-  nav ul li {
-    display: block;
-    text-align: center;
-    padding: 10px;
-    margin: 10px 100px 0px;
-    background-color: #172832;
-    text-decoration: none;
-    border-radius: 40px;
-  }
-  a {
-    color: #fcca46;
-    text-decoration: none;
-  }
-
-  h1 {
+  .logo {
     margin: 0px;
-  }
-  #hamburger-menu:checked ~ nav {
-    display: block;
-  }
-  #hamburger-menu {
-    display: none;
   }
   label,
   input {
     display: block;
     color: white;
   }
-  h1 {
-    background: linear-gradient(
-      0deg,
-      rgba(0, 0, 0, 0) 5%,
-      rgba(0, 0, 0, 0.26094187675070024) 15%,
-      rgba(0, 0, 0, 0.6923144257703081) 78%
-    );
+  .header {
+    height: auto;
   }
 }
