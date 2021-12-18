@@ -1,6 +1,13 @@
 .header {
   height: 22vh;
 }
+h1 {
+  text-align: center;
+  padding-top: 10px;
+  font-family: bahnschrift;
+  color: #f0f1f1;
+  font-size: 4rem;
+}
 
 .desktop-displaynone {
   margin: 0px;
@@ -22,15 +29,13 @@ body {
 }
 
 .cosmology-large_text {
-  text-align: center;
+  padding-top: 160px;
 }
 .cosmology-img {
   max-width: 40vw;
   border-radius: 20px;
 }
-.cosmology-large_text {
-  display: block;
-}
+
 .explore_grid {
   background-color: #172832;
   display: grid;

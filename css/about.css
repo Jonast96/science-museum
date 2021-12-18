@@ -6,6 +6,9 @@ label,
 input {
   display: none;
 }
+.fas {
+  padding: 10px 0px 20px 40px;
+}
 .header {
   height: 22vh;
 }
@@ -62,8 +65,9 @@ li {
 .about-large-text {
   text-align: center;
   color: #f0f1f1;
-  margin-bottom: 20px;
-  font-size: 2rem;
+  padding-bottom: 20px;
+  font-size: 2.5rem;
+  background-color: #172832;
 }
 .about-images {
   width: 15vw;
@@ -92,72 +96,25 @@ li {
 .grid-researchers {
   grid-column: span 2;
 }
+h1 {
+  text-align: center;
+  padding-top: 10px;
+  font-family: bahnschrift;
+  color: #f0f1f1;
+  font-size: 4rem;
+}
 
-@media only screen and (max-width: 866px) {
-  nav,
-  .mobile-displaynone {
-    display: none;
-  }
-  .fas {
-    display: block;
-    padding: 10px 0px 20px 40px;
-  }
-  .desktop-displaynone {
-    display: block;
-  }
-  nav {
-    background: none;
-  }
-  .header {
-    height: auto;
-  }
-
-  nav ul li {
-    display: block;
-    text-align: center;
-    padding: 10px;
-    margin: 10px 100px 0px;
-    background-color: #172832;
-    text-decoration: none;
-    border-radius: 40px;
-  }
-  a {
-    color: #fcca46;
-    text-decoration: none;
-  }
-
-  #hamburger-menu:checked ~ nav {
-    display: block;
-  }
-  #hamburger-menu {
-    display: none;
-  }
-  label,
-  input {
-    display: block;
-    color: white;
-  }
-  .logo {
-    background: linear-gradient(
-      0deg,
-      rgba(0, 0, 0, 0) 5%,
-      rgba(0, 0, 0, 0.26094187675070024) 15%,
-      rgba(0, 0, 0, 0.6923144257703081) 78%
-    );
-  }
-
+@media only screen and (max-width: 1200px) {
   .about-grid {
     grid-template-columns: repeat(6, 1fr);
     gap: 10px;
     margin: 10px;
   }
   .grid-visit {
-    grid-row-start: 1;
-    grid-row-end: 3;
-  }
-
-  .grid-visit {
     grid-column: span 2;
+    background-color: #f0f1f1;
+    grid-row: 1/3;
+    border-radius: 10px;
   }
   .grid-vision {
     grid-column: span 4;
@@ -172,7 +129,7 @@ li {
   .about-info,
   p,
   ul p {
-    font-size: 0.6rem;
+    font-size: 1rem;
   }
   .about-hours {
     line-height: 15px;
@@ -180,9 +137,27 @@ li {
   .about-images {
     width: 19vw;
   }
+  .border {
+    border-radius: 10px;
+  }
 }
+@media only screen and (max-width: 700px) {
+  label,
+  input {
+    display: block;
+    color: white;
+  }
+  nav,
+  .mobile-displaynone {
+    display: none;
+  }
+  .desktop-displaynone {
+    display: block;
+  }
+  .header {
+    height: auto;
+  }
 
-@media only screen and (max-width: 550px) {
   .about-grid {
     grid-template-columns: repeat(1, 1fr);
     margin: 20px;
@@ -199,10 +174,7 @@ li {
   .grid-researchers {
     grid-column: span 1;
   }
-  .grid-visit {
-    grid-row-start: 1;
-    grid-row-end: 1;
-  }
+
   .about-hours {
     line-height: 17px;
   }

@@ -1,0 +1,93 @@
+.desktop-displaynone {
+  margin: 0px;
+  display: none;
+}
+label,
+.hamburger-input {
+  display: none;
+}
+.fas {
+  padding: 10px 0px 20px 40px;
+}
+.header {
+  height: 22vh;
+}
+
+body {
+  background-color: #cad3f3;
+}
+h1 {
+  text-align: center;
+  padding-top: 10px;
+  font-family: bahnschrift;
+  color: #172832;
+  font-size: 4rem;
+}
+.contact-grid {
+  grid-template-columns: repeat(2, 1fr);
+  display: grid;
+}
+.contact-info {
+  grid-column: span 2;
+  justify-content: center;
+  background-color: #f0f1f1;
+  margin: 20px 300px;
+  padding: 20px;
+  border-radius: 30px;
+}
+.contact-input-textbox,
+.contact-input {
+  background-color: #172832;
+  text-align: center;
+  margin: 10px 50px;
+  border-radius: 30px;
+  padding: 20px 0px;
+}
+.contact-input {
+  grid-column: span 1;
+  color: #f0f1f1;
+}
+.contact-input-textbox {
+  grid-column: span 1;
+  color: #f0f1f1;
+}
+.line-gap {
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+}
+input {
+  font-size: 1.5rem;
+  margin: 10px;
+  padding: 10px 100px 10px 20px;
+  border-radius: 10px;
+  border: none;
+}
+textarea {
+  margin-top: 30px;
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+  font-size: 1.5rem;
+}
+textarea:focus,
+input:focus {
+  outline: none;
+}
+
+@media only screen and (max-width: 700px) {
+  label,
+  input {
+    display: block;
+    color: white;
+  }
+  nav,
+  .mobile-displaynone {
+    display: none;
+  }
+  .desktop-displaynone {
+    display: block;
+  }
+  .header {
+    height: auto;
+  }
+}
