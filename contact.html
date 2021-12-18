@@ -8,15 +8,19 @@
     <link rel="stylesheet" href="/css/styles.css" />
     <link rel="stylesheet" href="/css/header.css" />
     <link rel="stylesheet" href="/css/contact.css" />
+    <script
+      src="https://kit.fontawesome.com/4e89d93dba.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
-    <div class="header">
+    <header class="header">
       <p class="desktop-displaynone logo">
         Community Science <br />
         museum
       </p>
       <label for="hamburger-menu"><i class="fas fa-bars fa-2x"></i> </label>
-      <input class="hamburger-input" type="checkbox" id="hamburger-menu" />
+      <input class="checkbox" type="checkbox" id="hamburger-menu" />
       <nav>
         <p class="mobile-displaynone logo">
           Community Science <br />
@@ -29,43 +33,67 @@
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
-    </div>
-    <h1>Contact us</h1>
-    <main class="contact-grid">
-      <div class="contact-info">
-        <p class="line-gap">
+    </header>
+
+    <div class="grid">
+      <h1 class="span-2">Contact us</h1>
+      <div class="contact-info span-2">
+        <p>
           Feel free to contact us if you have any questions! There is some
           general information in the "About" section that might help answer some
-          questions.
-        </p>
-
-        <p class="line-gap">
-          For booking of tours for business organisations or schools, please
-          fill in the form and one of our event coordinators will get in touch
-          with you within the next 2-3 business days.
-        </p>
-        <p class="line-gap">
-          Any questions regarding supporting the museum can be sent to directly
-          to our director at Noah.Smith@ComumityMuseum.com, or call 99476155.
+          questions. For booking of tours for business organisations or schools,
+          please fill in the form and one of our event coordinators will get in
+          touch with you within the next 2-3 business days. Any questions
+          regarding supporting the museum can be sent to directly to our
+          director at Noah.Smith@ComumityMuseum.com, or call 99476155.
         </p>
       </div>
 
-      <div class="contact-input">
-        <p>Telephone*</p>
+      <div class="contact-input span-1">
+        <p class="p-margin">Telephone</p>
         <input type="tel" />
-        <p>Email*</p>
+        <p class="p-margin">Email</p>
         <input type="email" />
-        <p>Name*</p>
+        <p class="p-margin">Name</p>
         <input type="text" />
-        <p>Business or school</p>
+        <p class="p-margin">Business or school</p>
         <input type="text" />
       </div>
-      <div class="contact-input-textbox">
-        <p>Enter your question here</p>
-        <textarea rows="10" cols="50" placeholder="Enter text here"> </textarea>
+      <div class="contact-input-textbox span-1">
+        <p class="p-margin">Enter your question here</p>
+        <textarea placeholder="Enter text here"> </textarea>
+        <div class="contact-btn">
+          <a class="button" href="/index.html">Submit</a>
+        </div>
       </div>
-    </main>
-
-    <div class="flex"></div>
+    </div>
+    <footer class="footer">
+      <p class="copyright">
+        Community Science <br />
+        Museum &copy;
+      </p>
+      <div class="footer_content cookies">
+        <p class="footer_large-text">Cookies</p>
+        <p class="footer_small-text">
+          We use cookies to make sure you have the best <br />
+          possible experience while surfing the web
+        </p>
+      </div>
+      <div class="footer_content">
+        <p class="footer_large-text">Adresse</p>
+        <p class="footer_small-text">
+          Oslogaten 12 <br />
+          Oslo 4312 <br />
+          Norway
+        </p>
+      </div>
+      <div class="footer_content">
+        <p class="footer_large-text">Contact</p>
+        <p class="footer_small-text">
+          004791459188 <br />
+          Science@museum.com
+        </p>
+      </div>
+    </footer>
   </body>
 </html>
