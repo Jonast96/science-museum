@@ -1,64 +1,55 @@
-.desktop-displaynone {
-  margin: 0px;
-  display: none;
-}
 h1 {
-  color: #fcca46;
-  text-align: center;
-  font-family: bahnschrift;
-  font-size: 80px;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  margin-bottom: 40px;
+  color: #172832;
+  background-color: #cad3f3;
 }
 .container-1 {
   background-color: #cad3f3;
   text-align: center;
   display: flex;
   justify-content: center;
-  padding: 20px 70px;
-  gap: 50px;
   flex-wrap: wrap;
 }
 .big_text {
   font-family: bahnschrift, sans-serif;
   font-size: 3rem;
-  margin-bottom: 20px;
+}
+.container-1_big-text {
+  margin-bottom: 10px;
 }
 
 .img {
-  width: 22vw;
+  width: 21vw;
   border-radius: 10px;
+  margin: 0px 50px 20px 0px;
 }
 .img_higher {
   margin-top: 30px;
 }
+.container-1_info {
+  padding: 0px 50px 20px;
+}
 .info {
   font-size: 1.3rem;
-  padding: 20px 50px;
   font-family: Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.container-1_button {
+.index-button {
   background-color: rgba(23, 40, 50, 0.5);
-  font-size: 1.3rem;
-  position: absolute;
-  padding: 10px;
-  bottom: 65px;
-  left: 0px;
-  width: 100%;
+  font-size: 2.5rem;
+  padding: 10px 50px;
+  display: inline-block;
+  margin: 10px 0px;
 }
-.container-1_button:hover,
-.container-3_button:hover {
+.btn-center {
+  text-align: center;
+  background-color: #cad3f3;
+}
+.index-button:hover,
+.index-button:hover {
   -webkit-box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000,
     5px 5px 23px 18px rgba(0, 0, 0, 0.59);
   box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000,
     5px 5px 23px 18px rgba(0, 0, 0, 0.59);
-}
-.home-explore {
-  position: relative;
 }
 
 /* container-2 */
@@ -88,12 +79,11 @@ h2 {
 }
 
 .container-2_big-text {
-  font-family: bahnschrift, sans-serif;
-  font-size: 2em;
   text-decoration: underline;
   text-align: center;
   color: #f0f1f1;
   padding-top: 10px;
+  font-size: 2rem;
 }
 .container-2_text_image {
   color: #f0f1f1;
@@ -102,9 +92,7 @@ h2 {
 }
 
 .container-2_info {
-  font-size: 1.2rem;
   padding: 10px 50px 10px 50px;
-  font-family: "tahoma";
   grid-column: span 4;
 }
 /* container-3 */
@@ -118,37 +106,20 @@ h3 {
 }
 .container-3_info {
   text-align: left;
-  font-size: 1.3rem;
-  padding: 20px 50px 0px 50px;
-  font-family: "tahoma";
+  padding: 10px 30px 10px 30px;
   color: black;
 }
 .container-3_content {
   background-color: #f0f1f1;
   margin: 10px 30px;
   border-radius: 20px;
-  padding-bottom: 20px;
 }
 .container-3_big-text {
-  font-family: bahnschrift, sans-serif;
   font-size: 2.5rem;
 }
 .container-3 {
   background-color: #223743;
   text-align: center;
-  padding-bottom: 20px;
-}
-.container-3_button {
-  padding: 10px 50px;
-  font-size: 2.5rem;
-  margin-top: 10px;
-}
-label,
-input {
-  display: none;
-}
-.fas {
-  padding: 10px 0px 20px 40px;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -160,10 +131,8 @@ input {
   }
   .container-2 {
     text-align: center;
-    padding-bottom: 20px;
   }
   .container-2_img {
-    margin-left: 0px;
     max-width: 35vw;
     margin-top: 10px;
   }
@@ -176,7 +145,6 @@ input {
   .container-1 {
     flex-direction: column-reverse;
     padding: 10px 40px;
-    gap: 0px;
   }
 
   .container-3_big-text {
@@ -184,6 +152,7 @@ input {
   }
   .big_text {
     margin-bottom: 5px;
+    font-size: 2rem;
   }
   .img_higher {
     margin-top: 0px;
@@ -193,24 +162,29 @@ input {
     margin-bottom: 20px;
   }
 
-  .info {
+  .container-1_info {
     padding: 20px 0px;
   }
+  .index-button {
+    background-color: rgba(23, 40, 50, 0.5);
+    font-size: 1.5rem;
+    padding: 10px 30px;
+    display: inline-block;
+    margin-bottom: 20px;
+  }
+  .img {
+    margin: 0px;
+  }
 }
-@media only screen and (max-width: 700px) {
-  label,
-  input {
-    display: block;
-    color: white;
+
+@media only screen and (max-width: 450px) {
+  .info {
+    padding: 10px 20px;
+    font-size: 1rem;
   }
-  nav,
-  .mobile-displaynone {
-    display: none;
-  }
-  .desktop-displaynone {
-    display: block;
-  }
-  h1 {
-    display: none;
+  .container-1,
+  .container-2,
+  .container-3 {
+    padding: 20px;
   }
 }

@@ -1,18 +1,13 @@
-.desktop-displaynone {
-  margin: 0px;
-  display: none;
-}
-label,
-.input,
 .checkbox {
   display: none;
 }
 .fas {
   padding: 10px 0px 20px 40px;
 }
-.header {
-  height: 22vh;
+input {
+  display: block;
 }
+
 body {
   background-color: #cad3f3;
 }
@@ -33,11 +28,7 @@ body {
 }
 
 h1 {
-  text-align: center;
-  padding-top: 10px;
-  font-family: bahnschrift;
   color: #172832;
-  font-size: 4rem;
 }
 p {
   font-size: 1.5rem;
@@ -46,6 +37,7 @@ p {
   margin-bottom: 10px;
   font-size: 1.3rem;
   color: #f0f1f1;
+  text-align: left;
 }
 input {
   padding: 10px 10px;
@@ -101,6 +93,12 @@ textarea {
     width: 20em;
     height: 10em;
   }
+  .p-margin {
+    text-align: center;
+  }
+  input {
+    margin: 0 auto 0 auto;
+  }
 }
 
 @media only screen and (max-width: 800px) {
@@ -114,27 +112,7 @@ textarea {
     margin: 0px 0px;
   }
 }
-@media only screen and (max-width: 700px) {
-  nav,
-  .mobile-displaynone {
-    display: none;
-  }
-  .desktop-displaynone {
-    display: block;
-  }
 
-  .logo {
-    margin: 0px;
-  }
-  label,
-  .input {
-    display: block;
-    color: white;
-  }
-  .header {
-    height: auto;
-  }
-}
 @media only screen and (max-width: 450px) {
   input {
     width: 12em;

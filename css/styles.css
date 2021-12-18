@@ -22,3 +22,9 @@ p {
   font-family: Tahoma, Geneva, Verdana, sans-serif;
   font-size: 1rem;
 }
+h1 {
+  font-family: bahnschrift;
+  font-size: 4rem;
+  padding-top: 10px;
+  text-align: center;
+}
