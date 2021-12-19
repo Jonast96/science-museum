@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>community science museum-contact</title>
     <link rel="stylesheet" href="/css/styles.css" />
-    <link rel="stylesheet" href="/css/header.css" />
+    <link rel="stylesheet" href="/css/header-footer.css" />
     <link rel="stylesheet" href="/css/contact.css" />
     <script
       src="https://kit.fontawesome.com/4e89d93dba.js"
@@ -19,22 +19,39 @@
         Community Science <br />
         museum
       </p>
+
       <label for="hamburger-menu"><i class="fas fa-bars fa-2x"></i> </label>
       <input class="checkbox" type="checkbox" id="hamburger-menu" />
       <nav>
-        <p class="mobile-displaynone logo">
-          Community Science <br />
-          museum
-        </p>
+        <div class="flex">
+          <img
+            src="/images/open-science-735787.png"
+            width="100px
+      "
+            alt=""
+          />
+          <p class="mobile-displaynone logo">
+            Community Science <br />
+            museum
+          </p>
+        </div>
+
         <ul class="navbar">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="explore.html">Explore</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li class="nav-home nav-hover">
+            <a class="nav-home-a" href="index.html">Home</a>
+          </li>
+          <li class="nav-explore">
+            <a class="nav-explore-a" href="explore.html">Explore</a>
+          </li>
+          <li class="nav-about nav-hover">
+            <a class="nav-about-a" href="about.html">About</a>
+          </li>
+          <li class="nav-contact nav-hover">
+            <a class="nav-contact-a" href="contact.html">Contact</a>
+          </li>
         </ul>
       </nav>
     </header>
-
     <div class="grid">
       <h1 class="span-2">Contact us</h1>
       <div class="contact-info span-2">
@@ -51,13 +68,13 @@
 
       <div class="contact-input span-1">
         <p class="p-margin">Telephone</p>
-        <input type="tel" />
+        <input type="tel" placeholder="99887766" />
         <p class="p-margin">Email</p>
-        <input type="email" />
+        <input type="email" placeholder="Kevin.Malone@gmail.com" />
         <p class="p-margin">Name</p>
-        <input type="text" />
-        <p class="p-margin">Business or school</p>
-        <input type="text" />
+        <input type="text" placeholder="Kevin Malone" />
+        <p class="p-margin">Business or school (if relevant)</p>
+        <input type="text" placeholder="Hogwarts" />
       </div>
       <div class="contact-input-textbox span-1">
         <p class="p-margin">Enter your question here</p>

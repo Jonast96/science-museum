@@ -1,19 +1,27 @@
 h1 {
   color: #f0f1f1;
 }
-
+.nav-explore {
+  text-decoration: underline;
+}
+.nav-explore-a {
+  color: #fcca46;
+}
 .display-none {
   display: none;
 }
 body {
-  background-color: #172832;
+  background-color: #233d4d;
 }
 .explore_content_flex {
   display: flex;
-  margin: 0px 100px;
+  margin: 30px 100px 0px 100px;
+  background-color: rgba(23, 40, 50, 0.5);
+  padding: 70px 40px 40px 40px;
+  border-radius: 20px;
 }
 .flex-text {
-  font-size: 2vw;
+  font-size: 2rem;
   padding-left: 100px;
 }
 
@@ -26,15 +34,15 @@ body {
 }
 
 .explore_grid {
-  background-color: #172832;
+  background-color: #233d4d;
   display: grid;
-  gap: 5rem;
+  gap: 50px;
   grid-template-columns: repeat(6, 1fr);
   text-align: center;
   padding: 50px 100px 50px 100px;
 }
 .explore_content {
-  background-color: #1c2f3a;
+  background-color: rgba(23, 40, 50, 0.5);
   border-radius: 20px;
 }
 
@@ -59,18 +67,18 @@ main img {
 }
 .large_text {
   color: #faca47;
-  font-size: 2vw;
+  font-size: 3rem;
   font-family: bahnschrift;
-  margin: 20px 0px;
+  margin: 10px 0px;
 }
 .span-2_text {
-  font-size: 1vw;
+  font-size: 1rem;
 }
 .span-3_text {
-  font-size: 1.2vw;
+  font-size: 1.2rem;
 }
 .span-6_text {
-  font-size: 1.5vw;
+  font-size: 1.5rem;
 }
 .explore_text {
   margin: 10px 50px;
@@ -78,12 +86,7 @@ main img {
 .grid-span-2_margin-top {
   margin-top: 50px;
 }
-.explore_content_flex {
-  background-color: #1c2f3a;
-  padding: 70px 40px 40px 40px;
-  border-radius: 20px;
-  margin-top: 30px;
-}
+
 .cosmology-flex {
   position: absolute;
   left: 50%;
@@ -91,22 +94,20 @@ main img {
   transform: translate(-50%, -50%);
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1400px) {
   .explore_grid {
     grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
+    gap: 20px;
     padding: 20px;
   }
-  .explore_text {
-    font-size: 2vw;
+  .span-2_text,
+  .span-3_text,
+  .span-6_text {
+    font-size: 1.2rem;
   }
-  .grid-span-6 {
-    grid-column: span 1;
-  }
+  .grid-span-6,
+  .grid-span-2,
   .grid-span-3 {
-    grid-column: span 1;
-  }
-  .grid-span-2 {
     grid-column: span 1;
   }
   .grid-span-2_margin-top {
@@ -125,6 +126,9 @@ main img {
   .display-none {
     display: block;
   }
+  h1 {
+    font-size: 3rem;
+  }
 }
 
 @media only screen and (max-width: 700px) {
@@ -134,12 +138,15 @@ main img {
   .img {
     max-width: 75vw;
   }
-  .explore_text {
-    font-size: 4vw;
+  .span-2_text,
+  .span-3_text,
+  .span-6_text {
+    font-size: 1rem;
+
     margin: 10px;
   }
   .large_text {
-    font-size: 10vw;
+    font-size: 3rem;
     margin-bottom: 5px;
   }
 }

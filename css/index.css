@@ -1,6 +1,14 @@
 h1 {
   color: #172832;
+}
+body {
   background-color: #cad3f3;
+}
+.nav-home {
+  text-decoration: underline;
+}
+.nav-home-a {
+  color: #fcca46;
 }
 .container-1 {
   background-color: #cad3f3;
@@ -44,12 +52,12 @@ h1 {
   text-align: center;
   background-color: #cad3f3;
 }
-.index-button:hover,
+
 .index-button:hover {
   -webkit-box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000,
-    5px 5px 23px 18px rgba(0, 0, 0, 0.59);
+    0px 0px 14px -5px #000000;
   box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000,
-    5px 5px 23px 18px rgba(0, 0, 0, 0.59);
+    0px 0px 14px -5px #000000;
 }
 
 /* container-2 */

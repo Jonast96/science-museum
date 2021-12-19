@@ -1,8 +1,3 @@
-* {
-  box-sizing: border-box;
-  margin: 0%;
-  padding: 0;
-}
 .header {
   max-width: 100%;
   height: 22vh;
@@ -29,11 +24,12 @@ nav ul li {
 
 a {
   color: #f0f1f1;
-  font-size: 1.5em;
+  font-size: 1.5rem;
   font-family: bahnschrift;
+  text-decoration: none;
 }
 .logo {
-  font-size: 2.2em;
+  font-size: 2.2rem;
   margin-top: 20px;
   margin-left: 20px;
   text-align: center;
@@ -41,22 +37,15 @@ a {
   font-family: bahnschrift;
 }
 
-.button {
-  background-color: #172832;
-  text-decoration: none;
-  border-radius: 40px;
-  color: #fcca46;
-}
 .footer {
   display: flex;
-  justify-content: center;
-  gap: 20px;
+  justify-content: space-evenly;
+  text-align: center;
   background-color: #243f4e;
   color: #f0f1f1;
   padding-top: 10px;
-  font-family: Tahoma, Geneva, Verdana, sans-serif;
-  flex-wrap: wrap;
 }
+
 .footer_small-text {
   font-size: 0.8rem;
 }
@@ -79,6 +68,37 @@ input {
   margin: 0px;
   display: none;
 }
+.nav-hover {
+  display: inline-block;
+  position: relative;
+}
+
+.nav-hover::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+.nav-hover:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+.flex {
+  display: flex;
+}
+
+@media only screen and (max-width: 1200px) {
+  nav ul li {
+    margin: 10px 30px;
+  }
+}
+
 @media only screen and (max-width: 1040px) {
   .navbar {
     margin: 0px auto 0px auto;
@@ -95,18 +115,28 @@ input {
   .header {
     height: auto;
   }
-
   nav ul li {
-    display: block;
     text-align: center;
-    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
     margin: 10px 100px 0px;
-    background-color: #172832;
-    text-decoration: none;
-    border-radius: 40px;
+    border-radius: 10px;
+  }
+  .nav-contact {
+    padding-bottom: 20px;
+  }
+  nav ul li a {
+    font-size: 2rem;
+  }
+
+  nav ul li,
+  .nav-hover {
+    display: block;
+  }
+  .nav-hover::after {
+    display: none;
   }
   a {
-    color: #fcca46;
+    color: white;
     text-decoration: none;
   }
 
@@ -136,5 +166,12 @@ input {
   }
   .desktop-displaynone {
     display: block;
+  }
+  footer {
+    flex-direction: column;
+  }
+  .footer_small-text,
+  .copyright {
+    margin-bottom: 10px;
   }
 }

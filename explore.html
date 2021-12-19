@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>community science museum-explore</title>
-    <link rel="stylesheet" href="/css/header.css" />
+    <link rel="stylesheet" href="/css/header-footer.css" />
     <link rel="stylesheet" href="/css/styles.css" />
     <link rel="stylesheet" href="/css/explore.css" />
     <script
@@ -20,18 +20,36 @@
         Community Science <br />
         museum
       </p>
+
       <label for="hamburger-menu"><i class="fas fa-bars fa-2x"></i> </label>
-      <input type="checkbox" id="hamburger-menu" />
+      <input class="checkbox" type="checkbox" id="hamburger-menu" />
       <nav>
-        <p class="mobile-displaynone logo">
-          Community Science <br />
-          museum
-        </p>
+        <div class="flex">
+          <img
+            src="/images/open-science-735787.png"
+            width="100px
+      "
+            alt=""
+          />
+          <p class="mobile-displaynone logo">
+            Community Science <br />
+            museum
+          </p>
+        </div>
+
         <ul class="navbar">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="explore.html">Explore</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li class="nav-home nav-hover">
+            <a class="nav-home-a" href="index.html">Home</a>
+          </li>
+          <li class="nav-explore">
+            <a class="nav-explore-a" href="explore.html">Explore</a>
+          </li>
+          <li class="nav-about nav-hover">
+            <a class="nav-about-a" href="about.html">About</a>
+          </li>
+          <li class="nav-contact nav-hover">
+            <a class="nav-contact-a" href="contact.html">Contact</a>
+          </li>
         </ul>
       </nav>
     </header>

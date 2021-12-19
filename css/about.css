@@ -1,6 +1,12 @@
 body {
   background-color: #172832;
 }
+.nav-about {
+  text-decoration: underline;
+}
+.nav-about-a {
+  color: #fcca46;
+}
 .about-grid {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
