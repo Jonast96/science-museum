@@ -1,4 +1,4 @@
-# GameHub
+# Science Museum
 
 ![image](https://musing-sammet-7f9394.netlify.app/images/open-science-735787.png)
 
